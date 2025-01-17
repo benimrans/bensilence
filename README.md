@@ -2,7 +2,7 @@
 This is my first repsitory. So, I may not have done everything properly. I expect your understanding.
 
 # bensilence
-A voice recorder with voice activity detection (VAD). It starts recording when VAD detects speech and stops recording as the speaker stops talking for a second. This is just another version of [rhasspy-silence](https://github.com/rhasspy/rhasspy-silence). This library uses [Cobra (Picovoice)](https://picovoice.ai/platform/cobra/) for VAD, which is better than webRTC that was used in [rhasspy-silence](https://github.com/rhasspy/rhasspy-silence).
+A voice recorder with voice activity detection (VAD). It starts recording when VAD detects speech and stops recording as the speaker stops talking for a second. Best use case would be AI assistants. This is just another version of [rhasspy-silence](https://github.com/rhasspy/rhasspy-silence). This library uses [Cobra (Picovoice)](https://picovoice.ai/platform/cobra/) for VAD, which is better than webRTC that was used in [rhasspy-silence](https://github.com/rhasspy/rhasspy-silence).
 
 
 ## Installation
