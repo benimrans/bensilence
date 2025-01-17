@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="bensilence",  # Your library name
-    version="0.1.1",  # Initial version
+    version="0.1.2",  # Initial version
     author="Imran (benimrans)",  # Your name
     author_email="abdullaimran997@example.com",  # Your email
     description="A Python library for recording voice using voice actvity detection (VAD). Best for AI voice assistants.",
