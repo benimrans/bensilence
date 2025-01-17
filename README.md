@@ -28,7 +28,7 @@ A voice recorder with voice activity detection (VAD). It starts recording when V
    ```
 ## Usage/Examples
 
-You'll need a [Picovoice](picovoice.ai) account to get an API key. Once you get it, you are ready to go!
+You'll need a [Picovoice](https://picovoice.ai) account to get an API key. Once you get it, you are ready to go!
 
 ```python
 from bensilence import silence
