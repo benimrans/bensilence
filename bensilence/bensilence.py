@@ -32,14 +32,17 @@ class SilenceRecorder:
         self.audio = None
         self.pre_audio_buffer = deque(maxlen=int(self.rate * self.before_seconds))
 
-    def initialize_pyaudio(self):
+    def initialize(self):
         """Initialize PyAudio and Cobra VAD."""
-        self.cobra = pvcobra.create(access_key=self.api_key)
-        self.audio = pyaudio.PyAudio()
-        self.stream = self.audio.open(format=self.format, channels=self.channels, 
-                                      rate=self.rate, input=True, frames_per_buffer=self.chunk)
-        logging.info("PyAudio and Cobra initialized.")
-
+        try:
+            self.cobra = pvcobra.create(access_key=self.api_key)
+            self.audio = pyaudio.PyAudio()
+            self.stream = self.audio.open(format=self.format, channels=self.channels, 
+                                        rate=self.rate, input=True, frames_per_buffer=self.chunk)
+            logging.info("PyAudio and Cobra initialized.")
+        except Exception as e:
+            logging.error(f"Error: {e}")
+            return "Error", None
     def pcm_to_numpy(self, pcm_data):
         """Convert PCM data to numpy array."""
         return np.frombuffer(pcm_data, dtype=np.int16)
@@ -103,7 +106,6 @@ class SilenceRecorder:
     def record(self):
         """Perform voice activity detection and save recording."""
         try:
-            self.initialize_pyaudio()
             logging.info("Waiting for voice activity...")
             continuous_audio, start_time, end_time = self.start_recording()
             if start_time is not None and end_time is not None:
@@ -133,4 +135,4 @@ def silence(api_key, file_name="output.wav", before_seconds=1,
             max_sensitivity=2, max_recording_time=30, silence_threshold=1):
     recorder = SilenceRecorder(api_key, file_name, before_seconds, 
                                max_sensitivity, max_recording_time, silence_threshold)
-    return recorder.record()
+    return recorder
