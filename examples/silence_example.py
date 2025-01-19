@@ -1,5 +1,9 @@
 from bensilence import silence
 
-result, file_name = silence(api_key="your_picovoice_api_key", file_name="output.wav")
+silence = silence(api_key="your_picovoice_api_key")
+
+silence.initialize()
+
+result, file_name = silence.record()
 
 print(result, file_name)
