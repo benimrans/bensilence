@@ -40,6 +40,8 @@ silence.initialize()
 result, file_name = silence.record()
 
 print(result, file_name)
+
+silence.cleanup()
 ```
 
 Here are some variables that you may want to change:
