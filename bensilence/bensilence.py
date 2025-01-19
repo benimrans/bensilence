@@ -116,9 +116,7 @@ class SilenceRecorder:
         except Exception as e:
             logging.error(f"Error: {e}")
             return "Error", None
-        finally:
             self.cleanup()
-
     def cleanup(self):
         """Clean up resources."""
         if self.stream:
