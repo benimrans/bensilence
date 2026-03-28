@@ -92,5 +92,4 @@ MIT License - see LICENSE file for details
 
 ## Related Projects
 
-- [Original bensilence](https://github.com/benimrans/bensilence) - Uses Picovoice Cobra VAD
 - [rhasspy-silence](https://github.com/rhasspy/rhasspy-silence) - WebRTC-based VAD

@@ -5,9 +5,9 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="bensilence",
-    version="1.0.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    version="2.0.0",
+    author="benimrans",
+    author_email="abdullaimran997@gmail.com",
     description="A voice activity detection based audio recorder library using Silero VAD",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -17,7 +17,7 @@ setup(
         "numpy>=1.21.0",
         "pyaudio>=0.2.11",
         "soundfile>=0.10.0",
-        "torch>=1.9.0",
+        "torch>=2.7.0",
     ],
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -25,13 +25,10 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
-        "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Topic :: Multimedia :: Sound/Audio :: Analysis",
     ],
-    python_requires=">=3.7",
+    python_requires=">=3.10",
     keywords="voice activity detection vad audio recording speech silero",
 )
