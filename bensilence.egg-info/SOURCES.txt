@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+bensilence.egg-info/PKG-INFO
+bensilence.egg-info/SOURCES.txt
+bensilence.egg-info/dependency_links.txt
+bensilence.egg-info/requires.txt
+bensilence.egg-info/top_level.txt
