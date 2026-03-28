@@ -1,8 +1,14 @@
 LICENSE
+MANIFEST.in
 README.md
+pyproject.toml
+requirements.txt
 setup.py
+bensilence/__init__.py
+bensilence/bensilence.py
 bensilence.egg-info/PKG-INFO
 bensilence.egg-info/SOURCES.txt
 bensilence.egg-info/dependency_links.txt
 bensilence.egg-info/requires.txt
 bensilence.egg-info/top_level.txt
+examples/example.py

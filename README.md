@@ -15,6 +15,11 @@ This library uses [Silero VAD](https://github.com/snakers4/silero-models) for vo
 
 ## Installation
 
+### Install from PyPI/GitHub (Recommended)
+```bash
+pip install git+https://github.com/benimrans/bensilence.git
+```
+
 ### Install from source
 1. Clone or download this repository
 2. Navigate to the bensilence folder

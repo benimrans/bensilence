@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bensilence"
+version = "2.0.0"
+description = "A voice activity detection based audio recorder library using Silero VAD"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+authors = [
+    {name = "benimrans", email = "abdullaimran997@gmail.com"},
+]
+maintainers = [
+    {name = "benimrans", email = "abdullaimran997@gmail.com"},
+]
+keywords = ["voice", "activity", "detection", "vad", "audio", "recording", "speech", "silero"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Sound/Audio :: Analysis",
+]
+dependencies = [
+    "numpy>=1.21.0",
+    "pyaudio>=0.2.11",
+    "soundfile>=0.10.0",
+    "torch>=1.9.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/benimrans/bensilence"
+Repository = "https://github.com/benimrans/bensilence"
+Issues = "https://github.com/benimrans/bensilence/issues"
+Changelog = "https://github.com/benimrans/bensilence/releases"
+
+[tool.setuptools]
+packages = ["bensilence"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+bensilence = ["*.md", "*.txt"]

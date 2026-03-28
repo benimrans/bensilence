@@ -1,11 +1,17 @@
 Metadata-Version: 2.4
 Name: bensilence
-Version: 1.0.0
+Version: 2.0.0
 Summary: A voice activity detection based audio recorder library using Silero VAD
-Home-page: https://github.com/yourusername/bensilence
-Author: Your Name
-Author-email: your.email@example.com
-Keywords: voice activity detection vad audio recording speech silero
+Home-page: https://github.com/benimrans/bensilence
+Author: benimrans
+Author-email: benimrans <abdullaimran997@gmail.com>
+Maintainer-email: benimrans <abdullaimran997@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/benimrans/bensilence
+Project-URL: Repository, https://github.com/benimrans/bensilence
+Project-URL: Issues, https://github.com/benimrans/bensilence/issues
+Project-URL: Changelog, https://github.com/benimrans/bensilence/releases
+Keywords: voice,activity,detection,vad,audio,recording,speech,silero
 Classifier: Development Status :: 4 - Beta
 Classifier: Intended Audience :: Developers
 Classifier: License :: OSI Approved :: MIT License
@@ -16,6 +22,7 @@ Classifier: Programming Language :: Python :: 3.8
 Classifier: Programming Language :: Python :: 3.9
 Classifier: Programming Language :: Python :: 3.10
 Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
 Classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
 Requires-Python: >=3.7
 Description-Content-Type: text/markdown
@@ -25,16 +32,9 @@ Requires-Dist: pyaudio>=0.2.11
 Requires-Dist: soundfile>=0.10.0
 Requires-Dist: torch>=1.9.0
 Dynamic: author
-Dynamic: author-email
-Dynamic: classifier
-Dynamic: description
-Dynamic: description-content-type
 Dynamic: home-page
-Dynamic: keywords
 Dynamic: license-file
-Dynamic: requires-dist
 Dynamic: requires-python
-Dynamic: summary
 
 # bensilence
 
@@ -52,6 +52,11 @@ This library uses [Silero VAD](https://github.com/snakers4/silero-models) for vo
 - **Easy Integration**: Simple API for quick implementation
 
 ## Installation
+
+### Install from PyPI/GitHub (Recommended)
+```bash
+pip install git+https://github.com/benimrans/bensilence.git
+```
 
 ### Install from source
 1. Clone or download this repository
@@ -130,5 +135,4 @@ MIT License - see LICENSE file for details
 
 ## Related Projects
 
-- [Original bensilence](https://github.com/benimrans/bensilence) - Uses Picovoice Cobra VAD
 - [rhasspy-silence](https://github.com/rhasspy/rhasspy-silence) - WebRTC-based VAD
