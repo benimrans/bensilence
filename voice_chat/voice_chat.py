@@ -130,7 +130,7 @@ class VoiceChat:
         self._recorder.initialize()
         # Reuse the PyAudio instance that bensilence already created
         self._pa = self._recorder.audio
-        logger.info("VoiceChat initialised (model=%s, voice=%s).", self.model, self.tts_voice)
+        logger.info("VoiceChat initialized (model=%s, voice=%s).", self.model, self.tts_voice)
 
     def cleanup(self) -> None:
         """Release all audio resources."""
