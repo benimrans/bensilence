@@ -1,0 +1,3 @@
+# voice_chat — additional requirements
+# (bensilence's own deps — numpy, pyaudio, soundfile, torch — are assumed installed)
+openai>=1.0.0
